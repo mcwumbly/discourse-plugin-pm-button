@@ -6,7 +6,7 @@ Discourse.NavigationDefaultController.reopen({
     composePrivateMessage: function() {
       return this.controllerFor('composer').open({
         action: Discourse.Composer.PRIVATE_MESSAGE,
-        usernames: "",
+        usernames: 'staff',
         archetypeId: 'private_message',
         draftKey: 'new_private_message'
       });
